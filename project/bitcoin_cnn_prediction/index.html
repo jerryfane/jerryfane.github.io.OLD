@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Tool that allows you to buy Bitcoin with your Binance account automatically every day." />
+  <meta name="description" content="Modified Implementation of the research paper titled &#34;Algorithmic Financial Trading with Deep Convolutional Neural Networks Time Series to Image Conversion Approach&#34;, in order to specifically adapt it to Bitcoin price predictions." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://jerryfane.github.io/project/dcavg/" />
+  <link rel="alternate" hreflang="en-us" href="https://jerryfane.github.io/project/bitcoin_cnn_prediction/" />
 
   
 
@@ -280,7 +280,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="https://jerryfane.github.io/project/dcavg/" />
+  <link rel="canonical" href="https://jerryfane.github.io/project/bitcoin_cnn_prediction/" />
 
   
   
@@ -296,18 +296,18 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="" />
-  <meta property="og:url" content="https://jerryfane.github.io/project/dcavg/" />
-  <meta property="og:title" content="Bitcoin Automatic Dollar Cost Averaging | " />
-  <meta property="og:description" content="Tool that allows you to buy Bitcoin with your Binance account automatically every day." /><meta property="og:image" content="https://jerryfane.github.io/project/dcavg/featured.jpg" />
-    <meta property="twitter:image" content="https://jerryfane.github.io/project/dcavg/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://jerryfane.github.io/project/bitcoin_cnn_prediction/" />
+  <meta property="og:title" content="Bitcoin Buy/Sell predictions Using Convolutional Neural Network | " />
+  <meta property="og:description" content="Modified Implementation of the research paper titled &#34;Algorithmic Financial Trading with Deep Convolutional Neural Networks Time Series to Image Conversion Approach&#34;, in order to specifically adapt it to Bitcoin price predictions." /><meta property="og:image" content="https://jerryfane.github.io/project/bitcoin_cnn_prediction/featured.jpg" />
+    <meta property="twitter:image" content="https://jerryfane.github.io/project/bitcoin_cnn_prediction/featured.jpg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2021-01-01T00:00:00&#43;00:00"
+        content="2021-06-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-01-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-06-01T00:00:00&#43;00:00">
   
 
   
@@ -329,16 +329,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://jerryfane.github.io/project/dcavg/"
+    "@id": "https://jerryfane.github.io/project/bitcoin_cnn_prediction/"
   },
-  "headline": "Bitcoin Automatic Dollar Cost Averaging",
+  "headline": "Bitcoin Buy/Sell predictions Using Convolutional Neural Network",
   
   "image": [
-    "https://jerryfane.github.io/project/dcavg/featured.jpg"
+    "https://jerryfane.github.io/project/bitcoin_cnn_prediction/featured.jpg"
   ],
   
-  "datePublished": "2021-01-01T00:00:00Z",
-  "dateModified": "2021-01-01T00:00:00Z",
+  "datePublished": "2021-06-01T00:00:00Z",
+  "dateModified": "2021-06-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -353,7 +353,7 @@
       "url": "https://jerryfane.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Tool that allows you to buy Bitcoin with your Binance account automatically every day."
+  "description": "Modified Implementation of the research paper titled \"Algorithmic Financial Trading with Deep Convolutional Neural Networks Time Series to Image Conversion Approach\", in order to specifically adapt it to Bitcoin price predictions."
 }
 </script>
 
@@ -369,11 +369,11 @@
 
 
 
-  <title>Bitcoin Automatic Dollar Cost Averaging | </title>
+  <title>Bitcoin Buy/Sell predictions Using Convolutional Neural Network | </title>
 </head>
 
 
-<body id="top" data-spy="scroll"  data-target="#TableOfContents" class="page-wrapper   no-navbar" data-wc-page-id="d35497de366d2e26441347ffa2592460" >
+<body id="top" data-spy="scroll"  data-target="#TableOfContents" class="page-wrapper   no-navbar" data-wc-page-id="7d3bfea3e922925023b230920b362ac7" >
 
   
   
@@ -465,7 +465,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Bitcoin Automatic Dollar Cost Averaging</h1>
+  <h1>Bitcoin Buy/Sell predictions Using Convolutional Neural Network</h1>
 
   
 
@@ -483,7 +483,7 @@
     
       
     
-    Jan 1, 2021
+    Jun 1, 2021
   </span>
   
 
@@ -508,66 +508,14 @@
 
 
 
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-    
-      
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="/" >
-    <i class="fab fa-github mr-1"></i>
-    Github
-  </a>
-
 
 </div>
 
 
-</div>
-
-
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 417px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 418px;">
   <div style="position: relative">
-    <img src="/project/dcavg/featured_hu0a02987c1b5bc970b81bbe1882c329b7_1088833_720x0_resize_q75_lanczos.jpg" alt="" class="featured-image">
-    <span class="article-header-caption">Photo by Bermix Studio on Unsplash</span>
+    <img src="/project/bitcoin_cnn_prediction/featured_hu0a02987c1b5bc970b81bbe1882c329b7_819385_720x0_resize_q75_lanczos.jpg" alt="" class="featured-image">
+    <span class="article-header-caption">Photo by Executium on Unsplash</span>
   </div>
 </div>
 
@@ -576,28 +524,35 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h1 id="dcavg-bitcoin-daily-dollar-cost-averaging-dca">DCAVG: Bitcoin Daily Dollar Cost Averaging (DCA)</h1>
-<p><strong>Tool that allows you to buy Bitcoin automatically every day (or almost every day)</strong></p>
-<p>With this tool you will never forget to buy your daily bitcoins. Indeed, you can use it to buy Bitcoin automatically through the API of various exchanges, at the moment Binance and Coinbase Pro. The tool buys a predefined amount of Bitcoin through a &ldquo;MARKET&rdquo; trade for BTC-EUR.</p>
-<p>If the EURO value of Bitcoin to buy is less than 10EURO or 0.001BTC, which are the minimum amount required to trade on Binance and Coinbase, then it postpones the purchase for the following days. It will save the amount it would have bought until it reaches at least this minimum required amount.</p>
-<p>All the information saved daily, are stored on <code>./src/datasets/data.csv</code>, and it will be possible to receive automatically a report in .xlsx format to analyze the data of purchases through a telegram bot.</p>
-<p>Who will deploy this tool, will be able to easily manage multiple users, and configure their settings on <code>./src/datasets/users.csv</code>, moreover he will need to insert his telegram keys to the <code>./src/telegram/secrets.py</code> file. In this way it will be possible to integrate a bot on telegram to manage report sharing for all users.</p>
-<p>The telegram bot must have been started by running the <a href="https://github.com/jerryfane/DCAVG/blob/master/src/telegram/DCAVG_telegram_bot.py" target="_blank" rel="noopener">DCAVG_telegram_bot.py</a>.</p>
-<p>While to start the DCAVG bot just run <code>./src/DCAVG.py</code>.</p>
-<hr>
-<h3 id="updates">Updates</h3>
-<h4 id="march-7-2021">March 7, 2021</h4>
-<p>A new feature has been introduced that allows users to increase the amount of BTC to buy automatically, if the price of Bitcoin has decreased from the day before. This feature is configurable for each user in the file <code>./src/datasets/users.csv</code>.</p>
-<p>Basically if the user wants to buy 1 euro of Bitcoin per day, and the price of BTC has decreased by 10% compared to the previous day, then he will buy 1.1 euro.</p>
-<hr>
-<h3 id="i-developed-this-tool-out-of-personal-need-i-gladly-accept-external-help-to-develop-it-further">I developed this tool out of personal need, I gladly accept external help to develop it further.</h3>
-<h2 id="to-do">To do</h2>
+      <h1 id="bitcoin-buysell-predictions-using-convolutional-neural-network">Bitcoin Buy/Sell predictions Using Convolutional Neural Network</h1>
+<p>Modified Implementation of the research paper titled &ldquo;Algorithmic Financial Trading with Deep Convolutional Neural Networks: Time Series to Image Conversion Approach&rdquo;, in order to specifically adapt it to Bitcoin price predictions.</p>
+<p>As far as I know, this is the first attempt to predict the price of bitcoin using a Convolutional Neural Network.
+The main features used are composed of the Bitcoin close price and some features derived directly from the Bitcoin Blockchain, in particular:</p>
 <ul>
-<li><del>Add Telegram message notification system</del></li>
-<li>Add an automatic USDT recharge system to your account directly from FIAT and/or ERC-20 wallets.</li>
-<li><del>Allow you to manage the purchase of Bitcoin for multiple users with centralized funds management</del> <em>solved with Exchange API</em></li>
-<li>Allows you to manage the purchase of Bitcoin for multiple users with decentralized fund management</li>
+<li>Active Addresses</li>
+<li>Addresses with Non-Zero Balance</li>
+<li>Addresses with Balance &gt;= 1k BTC</li>
+<li>Addresses with Balance &gt;= 10k BTC</li>
+<li>Balance on Exchanges</li>
+<li>Exchange Net Flow Volume</li>
+<li>Fee Ratio Multiple (FRM) More info</li>
+<li>Thermocap (and not Marketcap to Thermocap Ratio)</li>
+<li>Coin Days Destroyed (CDD) More info</li>
+<li>Cumulative Value-Days Destroyed (CVDD) More info</li>
+<li>Dormancy More info</li>
+<li>Entity-adjusted Dormancy Flow</li>
+<li>Liveliness More info</li>
+<li>Percent of Supply Last Active 1+ Years Ago</li>
+<li>Realized HODL (RHODL) Ratio More info</li>
+<li>Realized Profit/Loss Ratio More info</li>
+<li>Difficulty Ribbon Ccompression</li>
+<li>Adjusted Spent Output Ratio (aSOPR) More info</li>
+<li>Stock to Flow Deflection</li>
+<li>Percent Supply in Profit More info</li>
+<li>Net Unrealized Profit/Loss (NUPL) More info</li>
 </ul>
+<p>On all of these I went to measure a series of Technical Indicators for different time-frames, so as to increase the amount of information, and also keep knowledge of the past. Then these will be used to compose the convolutional neural network images through Recurrence Plots.</p>
+<p>The labelling was done following the Triple Barrier, the strategy devised by Marcos Lopez De Prado, and explained in Advances in Financial Machine Learning. This strategy should simulate a Take Profit and Stop Loss scheme, using horizontal and vertical bars.  To simplify the classification, I chose to make the problem binary; the model should learn which days are best to buy bitcoin and which days are best to sell. Afterwards it will be task of the trading strategy applied on these information to have to take advantage of the predictions at best.</p>
 
     </div>
 
@@ -611,6 +566,12 @@
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tag/bitcoin/">Bitcoin</a>
+  
+  <a class="badge badge-light" href="/tag/deep-learning/">Deep Learning</a>
+  
+  <a class="badge badge-light" href="/tag/convolutional-neural-network/">Convolutional Neural Network</a>
+  
+  <a class="badge badge-light" href="/tag/financial-machine-learning/">Financial Machine Learning</a>
   
 </div>
 
@@ -627,7 +588,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://jerryfane.github.io/project/dcavg/&amp;text=Bitcoin%20Automatic%20Dollar%20Cost%20Averaging" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://jerryfane.github.io/project/bitcoin_cnn_prediction/&amp;text=Bitcoin%20Buy/Sell%20predictions%20Using%20Convolutional%20Neural%20Network" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -640,7 +601,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://jerryfane.github.io/project/dcavg/&amp;t=Bitcoin%20Automatic%20Dollar%20Cost%20Averaging" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://jerryfane.github.io/project/bitcoin_cnn_prediction/&amp;t=Bitcoin%20Buy/Sell%20predictions%20Using%20Convolutional%20Neural%20Network" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -653,7 +614,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Bitcoin%20Automatic%20Dollar%20Cost%20Averaging&amp;body=https://jerryfane.github.io/project/dcavg/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Bitcoin%20Buy/Sell%20predictions%20Using%20Convolutional%20Neural%20Network&amp;body=https://jerryfane.github.io/project/bitcoin_cnn_prediction/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -666,7 +627,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://jerryfane.github.io/project/dcavg/&amp;title=Bitcoin%20Automatic%20Dollar%20Cost%20Averaging" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://jerryfane.github.io/project/bitcoin_cnn_prediction/&amp;title=Bitcoin%20Buy/Sell%20predictions%20Using%20Convolutional%20Neural%20Network" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -679,7 +640,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Bitcoin%20Automatic%20Dollar%20Cost%20Averaging%20https://jerryfane.github.io/project/dcavg/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Bitcoin%20Buy/Sell%20predictions%20Using%20Convolutional%20Neural%20Network%20https://jerryfane.github.io/project/bitcoin_cnn_prediction/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -692,7 +653,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://jerryfane.github.io/project/dcavg/&amp;title=Bitcoin%20Automatic%20Dollar%20Cost%20Averaging" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://jerryfane.github.io/project/bitcoin_cnn_prediction/&amp;title=Bitcoin%20Buy/Sell%20predictions%20Using%20Convolutional%20Neural%20Network" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -843,7 +804,7 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/project/bitcoin_cnn_prediction/">Bitcoin Buy/Sell predictions Using Convolutional Neural Network</a></li>
+      <li><a href="/project/dcavg/">Bitcoin Automatic Dollar Cost Averaging</a></li>
       
       <li><a href="/project/bsc-thesis/">Mathematics and cryptography at the basis of the Bitcoin protocol</a></li>
       

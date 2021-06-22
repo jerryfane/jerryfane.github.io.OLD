@@ -5,7 +5,7 @@
     <link>https://jerryfane.github.io/tag/bitcoin/</link>
       <atom:link href="https://jerryfane.github.io/tag/bitcoin/index.xml" rel="self" type="application/rss+xml" />
     <description>Bitcoin</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jerryfane.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Bitcoin</title>
@@ -13,9 +13,46 @@
     </image>
     
     <item>
+      <title>Bitcoin Buy/Sell predictions Using Convolutional Neural Network</title>
+      <link>https://jerryfane.github.io/project/bitcoin_cnn_prediction/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://jerryfane.github.io/project/bitcoin_cnn_prediction/</guid>
+      <description>&lt;h1 id=&#34;bitcoin-buysell-predictions-using-convolutional-neural-network&#34;&gt;Bitcoin Buy/Sell predictions Using Convolutional Neural Network&lt;/h1&gt;
+&lt;p&gt;Modified Implementation of the research paper titled &amp;ldquo;Algorithmic Financial Trading with Deep Convolutional Neural Networks: Time Series to Image Conversion Approach&amp;rdquo;, in order to specifically adapt it to Bitcoin price predictions.&lt;/p&gt;
+&lt;p&gt;As far as I know, this is the first attempt to predict the price of bitcoin using a Convolutional Neural Network.
+The main features used are composed of the Bitcoin close price and some features derived directly from the Bitcoin Blockchain, in particular:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Active Addresses&lt;/li&gt;
+&lt;li&gt;Addresses with Non-Zero Balance&lt;/li&gt;
+&lt;li&gt;Addresses with Balance &amp;gt;= 1k BTC&lt;/li&gt;
+&lt;li&gt;Addresses with Balance &amp;gt;= 10k BTC&lt;/li&gt;
+&lt;li&gt;Balance on Exchanges&lt;/li&gt;
+&lt;li&gt;Exchange Net Flow Volume&lt;/li&gt;
+&lt;li&gt;Fee Ratio Multiple (FRM) More info&lt;/li&gt;
+&lt;li&gt;Thermocap (and not Marketcap to Thermocap Ratio)&lt;/li&gt;
+&lt;li&gt;Coin Days Destroyed (CDD) More info&lt;/li&gt;
+&lt;li&gt;Cumulative Value-Days Destroyed (CVDD) More info&lt;/li&gt;
+&lt;li&gt;Dormancy More info&lt;/li&gt;
+&lt;li&gt;Entity-adjusted Dormancy Flow&lt;/li&gt;
+&lt;li&gt;Liveliness More info&lt;/li&gt;
+&lt;li&gt;Percent of Supply Last Active 1+ Years Ago&lt;/li&gt;
+&lt;li&gt;Realized HODL (RHODL) Ratio More info&lt;/li&gt;
+&lt;li&gt;Realized Profit/Loss Ratio More info&lt;/li&gt;
+&lt;li&gt;Difficulty Ribbon Ccompression&lt;/li&gt;
+&lt;li&gt;Adjusted Spent Output Ratio (aSOPR) More info&lt;/li&gt;
+&lt;li&gt;Stock to Flow Deflection&lt;/li&gt;
+&lt;li&gt;Percent Supply in Profit More info&lt;/li&gt;
+&lt;li&gt;Net Unrealized Profit/Loss (NUPL) More info&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On all of these I went to measure a series of Technical Indicators for different time-frames, so as to increase the amount of information, and also keep knowledge of the past. Then these will be used to compose the convolutional neural network images through Recurrence Plots.&lt;/p&gt;
+&lt;p&gt;The labelling was done following the Triple Barrier, the strategy devised by Marcos Lopez De Prado, and explained in Advances in Financial Machine Learning. This strategy should simulate a Take Profit and Stop Loss scheme, using horizontal and vertical bars.  To simplify the classification, I chose to make the problem binary; the model should learn which days are best to buy bitcoin and which days are best to sell. Afterwards it will be task of the trading strategy applied on these information to have to take advantage of the predictions at best.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Bitcoin Automatic Dollar Cost Averaging</title>
       <link>https://jerryfane.github.io/project/dcavg/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://jerryfane.github.io/project/dcavg/</guid>
       <description>&lt;h1 id=&#34;dcavg-bitcoin-daily-dollar-cost-averaging-dca&#34;&gt;DCAVG: Bitcoin Daily Dollar Cost Averaging (DCA)&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Tool that allows you to buy Bitcoin automatically every day (or almost every day)&lt;/strong&gt;&lt;/p&gt;
@@ -39,6 +76,33 @@
 &lt;li&gt;&lt;del&gt;Allow you to manage the purchase of Bitcoin for multiple users with centralized funds management&lt;/del&gt; &lt;em&gt;solved with Exchange API&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Allows you to manage the purchase of Bitcoin for multiple users with decentralized fund management&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mathematics and cryptography at the basis of the Bitcoin protocol</title>
+      <link>https://jerryfane.github.io/project/bsc-thesis/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://jerryfane.github.io/project/bsc-thesis/</guid>
+      <description>&lt;h1 id=&#34;mathematics-and-cryptography-at-the-basis-of-the-bitcoin-protocol&#34;&gt;Mathematics-and-cryptography-at-the-basis-of-the-Bitcoin-protocol&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Starting from a general definition of Bitcoin and its main features, it will be explained in detail how the monetary system works, how transactions are validated and what are the incentives to validate transactions.
+Finally the more technical topics, such as Hash, Public Key Infrastructure, Proof-of-Work and how these have been applied within the protocol.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Since the publication of the Bitcoin protocol whitepaper, 10 years have passed and few people are still familiar with the mechanisms that have allowed this peer-to-peer payment network to function without interruption.
+In a world that is becoming increasingly globalized and digital, the birth of an electronic payment system was inevitable, and Bitcoin is just one of many attempts to do so.
+Before Bitcoin, there had already been several approaches to linking digital coins to cryptographic and mathematical-based systems such as Hashcash, Bit Gold and B-Money.
+Bitcoin is the first solution able to use not only cryptographic models, such as Hash functions, but in addition it has designed a decentralized network based on a system of economic incentives.
+In fact, the first Blockchain was established, which together with Bitcoin is proving to be a solid and functioning technology.
+The aim of this thesis is to explain in clear and easily accessible language how this payment model is able to operate autonomously.
+The topics dealt with are mainly focused on cryptographic and mathematical explanations in such a way as to be understandable even to those who do not have the technical skills.
+Starting from a general definition of Bitcoin and its main features, it will be explained in detail how the monetary system works, how transactions are validated and what are the incentives to validate transactions.
+Finally the more technical topics, such as Hash, Public Key Infrastructure, Proof-of-Work and how these have been applied within the protocol.
+To facilitate understanding, examples are provided using Python, and the reader will also be able to directly test the information explained with the codes made available.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;read-herehttpsgithubcomjerryfanemathematics-and-cryptography-at-the-basis-of-the-bitcoin-protocolblobmastermathematics20and20cryptography20at20the20basis20of20the20bitcoin20protocolpdf&#34;&gt;&lt;a href=&#34;https://github.com/jerryfane/Mathematics-and-cryptography-at-the-basis-of-the-Bitcoin-protocol/blob/master/Mathematics%20and%20cryptography%20at%20the%20basis%20of%20the%20Bitcoin%20protocol.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Read here&lt;/a&gt;&lt;/h3&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Originally written in &lt;a href=&#34;https://github.com/jerryfane/Mathematics-and-cryptography-at-the-basis-of-the-Bitcoin-protocol/blob/master/La%20matematica%20e%20la%20crittografia%20alla%20base%20del%20protocollo%20Bitcoin%E2%80%8B.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Italian&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     

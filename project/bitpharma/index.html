@@ -1,0 +1,1093 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Jerry Fanelli" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="BitPharma - Medical Prescriptions Implementation on Ethereum" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jerryfane.github.io/project/bitpharma/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.e6f7b650e2d80724e28cce23c674926c.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://jerryfane.github.io/project/bitpharma/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="" />
+  <meta property="og:url" content="https://jerryfane.github.io/project/bitpharma/" />
+  <meta property="og:title" content="BitPharma - Medical Prescriptions on Ethereum | " />
+  <meta property="og:description" content="BitPharma - Medical Prescriptions Implementation on Ethereum" /><meta property="og:image" content="https://jerryfane.github.io/project/bitpharma/featured.jpg" />
+    <meta property="twitter:image" content="https://jerryfane.github.io/project/bitpharma/featured.jpg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-11-01T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-11-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jerryfane.github.io/project/bitpharma/"
+  },
+  "headline": "BitPharma - Medical Prescriptions on Ethereum",
+  
+  "image": [
+    "https://jerryfane.github.io/project/bitpharma/featured.jpg"
+  ],
+  
+  "datePublished": "2020-11-01T00:00:00Z",
+  "dateModified": "2020-11-01T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Jerry Fanelli"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jerryfane.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "BitPharma - Medical Prescriptions Implementation on Ethereum"
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>BitPharma - Medical Prescriptions on Ethereum | </title>
+</head>
+
+
+<body id="top" data-spy="scroll"  data-target="#TableOfContents" class="page-wrapper   no-navbar" data-wc-page-id="37e6f3f74e4a864b87eb13cbdbca4648" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>BitPharma - Medical Prescriptions on Ethereum</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 1, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/" >
+    <i class="fab fa-github mr-1"></i>
+    Github
+  </a>
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 419px;">
+  <div style="position: relative">
+    <img src="/project/bitpharma/featured_hu0a02987c1b5bc970b81bbe1882c329b7_184433_720x0_resize_q75_lanczos.jpg" alt="" class="featured-image">
+    <span class="article-header-caption">Photo by The Tonik on Unsplash</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="bitpharma---medical-prescriptions-on-ethereum">BitPharma - Medical Prescriptions on Ethereum</h1>
+<p>In Italy, a lot of medical prescriptions are still hand written: electronic prescriptions are only required when the drug is paid by the regional public system, yet every pharmaceutical drug that legally requires a medical prescription can still be bought with a hand-written prescription. This leads to an <strong>authenticity problem</strong>. Moreover, it is unfortunately common practice that a pharmacist does not ask to actually see the medical prescription, even when it is needed. These behaviors could clearly pose a serious risk of <strong>drug use disorders</strong> and <strong>overmedication</strong> among the population. This project aims to try and provide a solution to these issues.</p>
+<p>Our service consists of a <strong>blockchain application</strong>, that authenticates medical prescriptions and facilitates exchange of information between medical doctors, pharmacies and authorities, creating an aggregate prescriptions database in a secure way. Prescriptions that are transmitted using the blockchain platform can be verified together with the identities of the medical doctor and the patient. Pharmacists would then be able to confirm the authenticity of the prescription, to make sure that they are selling a medicine for legitimate use. It could also make it possible for authorities to track which farmacies are selling which drugs to whom, to help prevent and tackle under the counter sales by matching the outflows with inventory data.</p>
+<p>Blockchain would also address the concern of <strong>privacy</strong> for health data, as patients' information would be de-identified, so that only trusted readers, selected by the patient, can associate the patient with the records present in the blockchain.</p>
+<h4 id="for-a-quick-presentation-about-the-project-and-how-to-use-the-interface-we-have-uploaded-a-video-at-bitpharma_presentationmp4httpsgithubcomjerryfanebitpharmablobmainbitpharma_presentationmp4">For a quick presentation about the project and how to use the interface, we have uploaded a video at <a href="https://github.com/jerryfane/bitpharma/blob/main/BitPharma_presentation.mp4" target="_blank" rel="noopener">./BitPharma_presentation.mp4</a></h4>
+<hr>
+<h2 id="overview">Overview</h2>
+<p>Doctors, patients and pharmacies can <strong>register</strong> on Bitpharma by entering their information, e.g. their Social Security number or medical licence. Once registered and authenticated, doctors can <strong>prescribe</strong> medicines to patients with various indications, such as the maximum quantity claimable by the patient in a single purchase or the expiration date of the prescription.
+When the patient wants to purchase the medicine, he/she can send a <strong>purchase request</strong> to a pharmacy, and once it has been submitted, the pharmacy can <strong>close</strong> the prescription and sell the medicine to the patient.</p>
+<p>Throughout the entire process, the patients' <strong>privacy</strong> is protected. Indeed, they are the only ones who can grant someone access to their information and their list of prescriptions, and can revoke this at any time.</p>
+<p>The <strong>roles</strong> defined in this market are the following:</p>
+<ol>
+<li>
+<p><strong>Doctor</strong>: the doctor can prescribe medications to the patients by a call to a function that generates the prescription based on various metadata - <em>such as patient address, quantity and expiration date.</em> If the patient allows it, a doctor can also have access to his/her historical record of prescribed drugs. Either way, when the medicine is prescribed, if there is already an active prescription (i.e. not expired and not fully exhausted) for the same drug, the physician is notified and cannot generate the prescription. This prevents a patient from having multiple doctors prescribe the same drug in the same timeframe.</p>
+</li>
+<li>
+<p><strong>Patient</strong>: when the doctor prescribes a drug to the patient, he/she can purchase it, by sending a purchase request to the pharmacy.</p>
+</li>
+<li>
+<p><strong>Pharmacy</strong>: Authenticated pharmacies can disburse the drug after the patient&rsquo;s purchase request has gone through. Once they have checked the prescription ID and the quantity requested by the patient, they can sell the drug and close the transaction.</p>
+</li>
+</ol>
+<p>All of this should be easily done through a user-friendly interface, which would ideally work in an web or phone application, and of which we have created a very simple prototype in this repository. For elderly patients or those who feel otherwise uncomfortable using such an app, the purchase request and sale steps could also easily be carried out at the pharmacy, just with the prescription code, proper identification a Social Security card on the patient&rsquo;s side.</p>
+<hr>
+<h2 id="structure-of-this-repository">Structure of this repository</h2>
+<p>In <code>Contracts/</code> you can find <code>whitelist.sol</code> and <code>bitpharma.sol</code>, which contain the contracts described above.
+Instead in <code>Interface/</code> you can find the <code>int_united.py</code> file to run in order to launch the interface, together with the necessary .abi/.bin files and the background images which are in the subdirectories <code>contract_data/</code> and <code>images/</code> respectively. Lastly, in <a href="https://github.com/jerryfane/bitpharma/blob/main/caveats.md" target="_blank" rel="noopener"><code>caveats.md</code></a> you can find a few more comments on potential privacy concerns, further developments and programming considerations.</p>
+<hr>
+<h2 id="contracts">Contracts</h2>
+<p>This process is enabled by two contracts:</p>
+<ul>
+<li><strong>whitelist</strong></li>
+<li><strong>prescriptions</strong></li>
+</ul>
+<h3 id="whitelist">Whitelist</h3>
+<p>The <em><strong>whitelist</strong></em> contract is used to manage users - <em>doctors, patients, pharmacies</em> - registered on BitPharma via mappings (address, bool). In particular, only the BitPharma manager can add or remove users, and these mappings will be used in the core contract - <em>prescriptions</em> - to verify the addresses. In this way, we can ensure that prescriptions are filled by a registered physician, directed towards addresses corresponding to valid patients, and drugs are only sold by a certified pharmacy.</p>
+<h3 id="prescriptions">Prescriptions</h3>
+<p>Let us now look at our main contract and its functionalities.</p>
+<p><strong>Prescriptions</strong> are represented in the struct <em>prescriptions</em>. In particular, we have taken into account the possibility of issuing repeatable prescriptions, i.e. prescriptions that allow the same prescription to be dispensed more than once. For this reason we added some variables such as the purchase_cooldown to allow the doctor to set a time before which the patient cannot re-purchase the medicine; e.g. one pack per month for a 6 months period.</p>
+<p>Specifically, the struct <code>prescription</code> is characterized by the following attributes:</p>
+<ul>
+<li><em>drug</em>: name of the drug to be prescribed</li>
+<li><em>quantity</em>: total quantity of the drug claimable before the prescription expires</li>
+<li><em>quantity_claimed</em>: quantity claimed by user in a single purchase</li>
+<li><em>maxclaim</em>: max amount claimable in single purchase. E.g. the doctor can set a limit to 1 package of the drug each purchase.</li>
+<li><em>purchase_cooldown</em>: number of days for the patient to be able to buy the drug again.</li>
+<li><em>last_purchase</em>: timestamp of latest purchase</li>
+<li><em>expiration</em>: days from when prescription was issued</li>
+<li><em>status</em>: it can take value from 0 to 3 based on the status of the prescription. In particular,  0 means that the prescription has been issued. It takes value 1 once the patient has confirmed the purchase and 2 when the pharmacy has closed the transaction successfully. Finally, if the prescription expires before being used, the status takes value 3.</li>
+<li><em>doctor</em>: doctor who issued the prescription</li>
+</ul>
+<p>We keep track of all prescriptions being issued in the chain with the array <code>prescriptions</code>. Given a prescription id, the only users that can view the details of that prescription are the recipient of it, external users allowed by the recipient (&ldquo;readers&rdquo;), the doctor who issued it and the pharmacies at point of sale. Note that, when viewing the details of a prescription with a call to <code>prescription_details</code> there is no reference to the addresses of the patient and the doctor (checks are carried out internally when selling or requesting access), as a further privacy guarantee.</p>
+<p>At a more developed stage, most of these attributes would be constrained to values that comply with current regulation. For instance, Italian laws allow for prescriptions of up to two packages for most drugs, which increases to three for drugs used to treat chronic diseases and to six for injectable antibiotics. This could be achieved by allowing the contract to communicate with an external database that would contain all of these requirements, and then add checks in the code to ensure full compliance to the regulation.</p>
+<p>We used several internal <code>mappings</code>, to allow for easy information retrieval and to enable the use of different require() statements in function calls.
+In particual, we mapped:</p>
+<ol>
+<li><code>prescription_to_patient</code>: each prescription ID to the corresponding patient address;</li>
+<li><code>patient_readers</code>: for each patient address, the addresses of the other users who have been explicitly allowed access to their prescription history (e.g. their doctor). Patient can add and remove new readers with a call to the <code>patient_add_reader</code> and <code>patient_remove_reader</code> functions. Only allowed readers can access the prescription history of a patient.</li>
+<li><code>patient_active_prescriptions</code>: a nested mapping; for each patient address, and each drug, map to a boolean that indicates whether or not they have an active prescription for the drug. This is necessary, as we see below, to check and avoid co-occurring double prescriptions.</li>
+<li><code>patient_id_prescriptions</code>: for each patient, a list of prescriptions ids that make up his/her whole prescription history.</li>
+<li><code>patient_drug_expiration</code>: a nested mapping; for each patient, and each prescribed drug, map to the expiration of the corresponding prescription</li>
+<li><code>patient_drug_id</code>: a nested mapping;  for each patient, and prescribed drug, map to the id of the corresponding active prescription</li>
+<li><code>prescription_to_pharmacy_quantity</code>: a nested mapping; for each prescription id, map to the pharmacy who closed it and the quantity sold.</li>
+<li><code>prescription_to_pharmacy</code>: for each prescription id, map to the address of the pharmacy who closed it.</li>
+<li><code>is_old_patient</code>: for each patient address, map to a boolean stating whether the patient is a new user (i.e. there has never been a prescription made towards him/her on the blockchain).</li>
+</ol>
+<p>Mappings 7 and 8 are drafts, meant to allow for easier checks by special categories of readers such as law enforcements, via the <code>get_prescription_pharmacies</code> and <code>get_prescription_pharmacy_quantity</code>functions which are at this stage simple external view function. More on this in the caveats.</p>
+<h4 id="main-functions">Main functions</h4>
+<ul>
+<li>
+<p><code>new_prescription</code>: with this function, a whitelisted doctor can issue a new prescription to a valid patient address. Authentication is achieved through require functions that ascertain that the addresses belong to a pair of registered doctor/patient, by verifying with the whitelist contract. The function takes as inputs the drug name, its quantity, maximum claimable amount, purchase cooldown period, days to expiration of the prescription and the patient&rsquo;s address. In particular, to make sure the prescription is not issued with an expiration date greater than three months, we have included a require function. The same was done to ensure that the expiration date is not less than the purchase cooldown, multiplied by the quantity, divided by the maximum claimable amount. If it were the case, the patient would not be able to purchase the prescribed amount of medicine by the expiration date. Finally, the <code>check_active_prescriptions</code>function checks whether the patient already has an active prescription for the same drug. If that is the case, the transaction cannot go through.
+By calling the new_prescription function, the patient&rsquo;s information is also updated, adding the new prescription to the <em>patient_active_prescriptions</em> array and cleaning it from expired ones (which get status changed to 3) if there are any. The status of a new prescription is initialised as 0.</p>
+</li>
+<li>
+<p><code>patient_purchasing</code>: through the prescription_id, the patient can launch the request to purchase the medicine. There are several require functions to check that the patient is actually the holder of that prescription, that the prescription is not expired and that the quantity requested does not exceed the quantity prescribed; also, the function makes sure that the patient is respecting the purchase cooldown period in case he/she has made a previous purchase with the same prescription id. If the transaction is successful, the prescription status is updated to 1.</p>
+</li>
+<li>
+<p><code>close_transaction</code>: once the prescription status is equal to 1 (i.e. the patient has requested to make a purchase), the pharmacy can proceed with the sale. This function will close the transaction and certify the sale of the medicine to the patient. If there is no outstanding claimable quantity in the prescription after the purchase , then the prescription is finally closed with status 2. Otherwise, the available quantity is reduced by the quantity purchased and the prescription status is changed back to 0. In this way, the prescription will still be available to the patient to purchase the remaining prescribed quantity. This function can only be called by a registered pharmacy and the authentication is achieved by verifying the address against the whitelist contract.</p>
+</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/solidity/">Solidity</a>
+  
+  <a class="badge badge-light" href="/tag/ethereum/">Ethereum</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://jerryfane.github.io/project/bitpharma/&amp;text=BitPharma%20-%20Medical%20Prescriptions%20on%20Ethereum" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://jerryfane.github.io/project/bitpharma/&amp;t=BitPharma%20-%20Medical%20Prescriptions%20on%20Ethereum" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=BitPharma%20-%20Medical%20Prescriptions%20on%20Ethereum&amp;body=https://jerryfane.github.io/project/bitpharma/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://jerryfane.github.io/project/bitpharma/&amp;title=BitPharma%20-%20Medical%20Prescriptions%20on%20Ethereum" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=BitPharma%20-%20Medical%20Prescriptions%20on%20Ethereum%20https://jerryfane.github.io/project/bitpharma/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://jerryfane.github.io/project/bitpharma/&amp;title=BitPharma%20-%20Medical%20Prescriptions%20on%20Ethereum" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://jerryfane.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu0a02987c1b5bc970b81bbe1882c329b7_183566_270x270_fill_q75_lanczos_center.jpg" alt="Jerry Fanelli"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://jerryfane.github.io/">Jerry Fanelli</a></h5>
+      <h6 class="card-subtitle">MSc Student - Data Science and Business Analytics</h6>
+      <p class="card-text">My research interests include distributed robotics, mobile computing and programmable matter.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Jerry543_" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jerryfane" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/jerry-fanelli/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
