@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bitcoin | </title>
+    <link>https://jerryfane.github.io/tag/bitcoin/</link>
+      <atom:link href="https://jerryfane.github.io/tag/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bitcoin</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jerryfane.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Bitcoin</title>
+      <link>https://jerryfane.github.io/tag/bitcoin/</link>
+    </image>
+    
+    <item>
+      <title>Bitcoin Automatic Dollar Cost Averaging</title>
+      <link>https://jerryfane.github.io/project/dcavg/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://jerryfane.github.io/project/dcavg/</guid>
+      <description>&lt;h1 id=&#34;dcavg-bitcoin-daily-dollar-cost-averaging-dca&#34;&gt;DCAVG: Bitcoin Daily Dollar Cost Averaging (DCA)&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Tool that allows you to buy Bitcoin automatically every day (or almost every day)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With this tool you will never forget to buy your daily bitcoins. Indeed, you can use it to buy Bitcoin automatically through the API of various exchanges, at the moment Binance and Coinbase Pro. The tool buys a predefined amount of Bitcoin through a &amp;ldquo;MARKET&amp;rdquo; trade for BTC-EUR.&lt;/p&gt;
+&lt;p&gt;If the EURO value of Bitcoin to buy is less than 10EURO or 0.001BTC, which are the minimum amount required to trade on Binance and Coinbase, then it postpones the purchase for the following days. It will save the amount it would have bought until it reaches at least this minimum required amount.&lt;/p&gt;
+&lt;p&gt;All the information saved daily, are stored on &lt;code&gt;./src/datasets/data.csv&lt;/code&gt;, and it will be possible to receive automatically a report in .xlsx format to analyze the data of purchases through a telegram bot.&lt;/p&gt;
+&lt;p&gt;Who will deploy this tool, will be able to easily manage multiple users, and configure their settings on &lt;code&gt;./src/datasets/users.csv&lt;/code&gt;, moreover he will need to insert his telegram keys to the &lt;code&gt;./src/telegram/secrets.py&lt;/code&gt; file. In this way it will be possible to integrate a bot on telegram to manage report sharing for all users.&lt;/p&gt;
+&lt;p&gt;The telegram bot must have been started by running the &lt;a href=&#34;https://github.com/jerryfane/DCAVG/blob/master/src/telegram/DCAVG_telegram_bot.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DCAVG_telegram_bot.py&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;While to start the DCAVG bot just run &lt;code&gt;./src/DCAVG.py&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;updates&#34;&gt;Updates&lt;/h3&gt;
+&lt;h4 id=&#34;march-7-2021&#34;&gt;March 7, 2021&lt;/h4&gt;
+&lt;p&gt;A new feature has been introduced that allows users to increase the amount of BTC to buy automatically, if the price of Bitcoin has decreased from the day before. This feature is configurable for each user in the file &lt;code&gt;./src/datasets/users.csv&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Basically if the user wants to buy 1 euro of Bitcoin per day, and the price of BTC has decreased by 10% compared to the previous day, then he will buy 1.1 euro.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;i-developed-this-tool-out-of-personal-need-i-gladly-accept-external-help-to-develop-it-further&#34;&gt;I developed this tool out of personal need, I gladly accept external help to develop it further.&lt;/h3&gt;
+&lt;h2 id=&#34;to-do&#34;&gt;To do&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;Add Telegram message notification system&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Add an automatic USDT recharge system to your account directly from FIAT and/or ERC-20 wallets.&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Allow you to manage the purchase of Bitcoin for multiple users with centralized funds management&lt;/del&gt; &lt;em&gt;solved with Exchange API&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Allows you to manage the purchase of Bitcoin for multiple users with decentralized fund management&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
